@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-export const AppContainer = styled.div`
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-`;
-
 export const Header = styled.header`
   background-color: #333;
   padding: 10px 0;
@@ -70,26 +65,3 @@ export const ResponsiveLogo = styled(Logo)`
     margin-bottom: 10px;
   }
 `;
-
-function App() {
-  return (
-    <AppContainer>
-      <Header>
-        <ResponsiveNavbar>
-          <LogoContainer>
-            <ResponsiveLogo>
-              <img src="your-logo.png" alt="Company Logo" />
-            </ResponsiveLogo>
-            <ResponsiveCompanyName>Password Generator</ResponsiveCompanyName>
-          </LogoContainer>
-          {/* Add any other navbar items or links here */}
-        </ResponsiveNavbar>
-      </Header>
-      <Content>
-        {/* Add the rest of your application content here */}
-      </Content>
-    </AppContainer>
-  );
-}
-
-export default App;
