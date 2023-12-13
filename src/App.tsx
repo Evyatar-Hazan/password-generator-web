@@ -1,5 +1,5 @@
 import * as Style from "./styleApp"
-import NavBar from './navBer';
+import NavBar from './component/navBer';
 
 
 function App() {
