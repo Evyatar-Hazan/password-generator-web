@@ -1,10 +1,15 @@
-import './App.css';
+import * as Style from "./styleApp"
+import NavBar from './navBer';
+
 
 function App() {
   return (
-    <div className="App">
-     password-generator
-    </div>
+    <Style.AppContainer>
+      <NavBar />
+      <div className="content">
+        {/* Add the rest of your application content here */}
+      </div>
+    </Style.AppContainer>
   );
 }
 
